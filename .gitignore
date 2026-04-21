@@ -1,0 +1,23 @@
+# Maven build targets
+target/
+
+# test stuff
+
+
+# NetBeans specific files
+nbactions.xml
+nb-configuration.xml
+catalog.xml
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# this just makes me feel better
+*.class
+
+# Log files
+*.log
+
+
