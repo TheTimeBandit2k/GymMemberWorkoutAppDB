@@ -11,10 +11,7 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author sixx
- */
+
 public class MainDashboard extends javax.swing.JFrame {
     private final DefaultListModel listModel = new DefaultListModel<>();
 
