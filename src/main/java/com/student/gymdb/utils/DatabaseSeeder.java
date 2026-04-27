@@ -4,7 +4,6 @@ import com.student.gymdb.dao.MemberDAO;
 import com.student.gymdb.dao.WorkoutLogDAO;
 import com.student.gymdb.model.Member;
 import com.student.gymdb.model.WorkoutLog;
-import java.util.List;
 import java.sql.Date;
 
 
@@ -52,43 +51,5 @@ public class DatabaseSeeder {
          
          System.out.println("Seeding complete.");
          
-         
-         // Logic Testing
-         MemberDAO memDAO = new MemberDAO();
-         WorkoutLogDAO logDAO = new WorkoutLogDAO();
-         
-         System.out.println("Case 1");
-         List<Member> expiringSoon = memDAO.getPremiumMembersExpiring();
-         
-         for (Member m : expiringSoon) {
-             System.out.println(m.toString());
-         }
-         
-         System.out.println("Case 2");
-         List<WorkoutLog> hardWorkouts = logDAO.getHighCalorieWorkouts();
-         
-         for (WorkoutLog log : hardWorkouts) {
-             System.out.println(log.toString());
-         }
-         
-         System.out.println("Case 3");
-         List<WorkoutLog> retrievedLogs = logDAO.getLogbyMemberID(4);
-         
-         for (WorkoutLog log : retrievedLogs) {
-             System.out.println(log.toString());
-         }
-         
-         System.out.println("Case 4");
-         List<Member> byTrainer = mDAO.getMembersByTrainer("John");
-         
-         for (Member m : byTrainer) {
-             System.out.println(m.toString());
-         }
-         
-         System.out.println("Case 5");
-         mDAO.updateMembershipType(6, "Premium");
-         
-         System.out.println("Case 6");
-         logDAO.updateWorkoutDuration(108, 45);
     }
 }
