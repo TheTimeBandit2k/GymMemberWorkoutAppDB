@@ -8,7 +8,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>25</maven.compiler.release>
-        <exec.mainClass>com.student.gymmdb.main.GymMembershipWorkoutAppDB</exec.mainClass>
+        <exec.mainClass>com.student.gymdb.main.AppRunner</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
